@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/menu"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item android:id="@+id/icon_menu"
+        android:title="@string/icon_menu"
+        android:icon="@drawable/icon"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/search_menu"
+        android:icon="@drawable/user"
+        android:title="@string/search_menu"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/cart_menu"
+        android:title="@string/cart_menu"
+        android:icon="@drawable/cart"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/Computers"
+        android:title="Computers"
+        app:showAsAction="never" >
+
+        <menu>
+            <item android:id="@+id/Laptops"
+                android:title="Laptops"/>
+
+            <item android:id="@+id/Desktops"
+                android:title="Desktops"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/Gadgets"
+        android:title="Gadgets"
+        app:showAsAction="never" >
+
+        <menu>
+            <item android:id="@+id/Applewatches"
+                android:title="Apple watches"/>
+
+            <item android:id="@+id/Smartwatches"
+                android:title="Smart watches"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/Gaming"
+        android:title="Gaming"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/TVs"
+        android:title="TV's"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Header Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#162DAC"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Left menu -->
+        <ImageView
+            android:id="@+id/header_left_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right user -->
+        <ImageView
+            android:id="@+id/account_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/shopping_cart_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right Cart Icon -->
+        <ImageView
+            android:id="@+id/shopping_cart_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right Logo Icon -->
+        <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/account_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/Dellbutton"
+        android:layout_width="177dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="88dp"
+        android:onClick="buttonOnClick"
+        android:tag="2"
+        android:text="Drone Pro Max 14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <Button
+        android:id="@+id/logitechbutton"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="buttonOnClick"
+        android:tag="7"
+        android:text="Amazon Echo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dellbutton" />
+
+    <Button
+        android:id="@+id/samsungbutton"
+        android:layout_width="239dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:tag="6"
+        android:text="Samsung Galaxy watch 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logitechbutton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="37dp"
+        android:clickable="true"
+        android:contentDescription="w"
+        android:onClick="buttonOnClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/Dellbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/drone" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="95dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="37dp"
+        android:clickable="true"
+        android:contentDescription="w"
+        android:onClick="buttonOnClick"
+        android:tag="7"
+        app:layout_constraintEnd_toStartOf="@+id/logitechbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/speaker" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="94dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="38dp"
+        android:contentDescription="w"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:tag="6"
+        app:layout_constraintEnd_toStartOf="@+id/samsungbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/smart_watch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
