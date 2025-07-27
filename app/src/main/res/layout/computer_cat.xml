@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#162DAC"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Left menu -->
+        <ImageView
+            android:id="@+id/header_left_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right user -->
+        <ImageView
+            android:id="@+id/account_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/shopping_cart_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right Cart Icon -->
+        <ImageView
+            android:id="@+id/shopping_cart_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Right Logo Icon -->
+        <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/account_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/Dellcompbutton"
+        android:layout_width="125dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:onClick="buttonOnClick"
+        android:contentDescription="d"
+        android:tag="10"
+        app:layout_constraintEnd_toStartOf="@+id/Dellbutton"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/apple_macbook" />
+
+    <Button
+        android:id="@+id/Dellbutton"
+        android:layout_width="177dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="256dp"
+        android:onClick="buttonOnClick"
+        android:tag="10"
+        android:text="Dell XPS 13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/logitechimgbutton"
+        android:layout_width="124dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:onClick="buttonOnClick"
+        android:contentDescription="d"
+        android:tag="8"
+        app:layout_constraintEnd_toStartOf="@+id/logitechbutton"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dellcompbutton"
+        app:srcCompat="@drawable/mouse" />
+
+    <Button
+        android:id="@+id/logitechbutton"
+        android:layout_width="235dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="196dp"
+        android:onClick="buttonOnClick"
+        android:tag="8"
+        android:text="Logitech MX Master 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dellbutton" />
+
+    <ImageView
+        android:id="@+id/samsungmonbutton"
+        android:layout_width="144dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:contentDescription="d"
+        android:tag="9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logitechimgbutton"
+        app:srcCompat="@drawable/smart_tv" />
+
+    <Button
+        android:id="@+id/samsungbutton"
+        android:layout_width="239dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="104dp"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:tag="9"
+        android:text="Samsung 27' Curved Monitor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/samsungmonbutton"
+        app:layout_constraintTop_toBottomOf="@+id/logitechbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+            android:name="com.example.hifi.application.HiFiApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".presentation.HomeActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".presentation.ProductDescriptionActivity"
+                android:label="@string/product_description">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.SearchProductActivity"
+                android:label="@string/search_product">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.UserSignInActivity"
+                android:label="@string/sign_in">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.UserCreateAccountActivity"
+                android:label="@string/sign_up">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.UserSignInActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.CartActivity"
+                android:label="@string/cart">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".presentation.EditProfileActivity"
+            android:label="@string/cart">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.OrderHistoryActivity"
+                android:label="@string/order_history">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+        <activity
+                android:name=".presentation.WishListActivity"
+                android:label="@string/wishlist">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.hifi.presentation.HomeActivity" />
+        </activity>
+    </application>
+</manifest>
